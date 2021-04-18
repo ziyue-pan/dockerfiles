@@ -7,5 +7,5 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
     apt -y clean && \
     apt -y update && \
     apt -y upgrade && \
-    apt install -y nodejs && \
+    apt install -y nodejs npm && \
     npm config set registry https://registry.npm.taobao.org/
