@@ -13,7 +13,9 @@ $ docker run --rm -ti -v ${HOME}/Desktop/course/CP/Lab:/lab flexbison-image
 ## 2. SSEC
 
 ```bash
-
+$ cd SSEC
+$ docker build --no-cache -t ssec-image .
+$ docker run -it --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v ${HOME}/Desktop/course/SSEC/Labs:/SSEC ssec-image /bin/bash
 ```
 
 
