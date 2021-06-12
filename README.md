@@ -25,3 +25,15 @@ $ cd nodejs
 $ docker build --no-cache -t nodejs-image .
 $ docker run -it -v ${HOME}/Desktop/course/SE/Lab/MediConnect-Front:/frontend -p 3000:3000 nodejs-image /bin/bash
 ```
+
+## 4. PostgreSQL
+```bash
+$ docker pull postgres
+$ docker run -d \
+    --name se-postgres \
+    -e POSTGRES_USER=gorm \
+    -e POSTGRES_PASSWORD=gorm \
+    -p 5432:5432 \
+    postgres
+```
+
