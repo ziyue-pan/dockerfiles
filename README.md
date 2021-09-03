@@ -30,5 +30,5 @@ $ docker run -it -v ${HOME}/Desktop/course/SE/Lab/MediConnect-Front:/frontend -p
 
 ```bash
 $ docker build -t oslab .
-$ docker run --name oslab -it -v ${HOME}/Desktop/github/os21fall-ta:/os21fall-ta oslab 
+$ docker run --name oslab -it -v ${HOME}/Desktop/github/os21fall-ta:/os21fall-ta oslab bash
 ```
